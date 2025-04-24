@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    body {
+        font-family: "Chakra Petch", sans-serif;
+      }
+      h1,
+h2,
+h5 {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+}
+footer a {
+    color: var(--cor-principal);
+  }
+  
+  footer a:hover {
+    color: var(--cor-destaque);
+  }
+    --cor-principal: #39b5ee;
+  --cor-secundaria: #284a60;
+  --cor-destaque: #2b63fc;
+}
+.lead {
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
+body {
+  font-family: "Chakra Petch", sans-serif;
+  color: var(--cor-principal);
+}
+.lead,
+.btn-link {
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+#toggle-theme:checked ~ h1 {
+  color: white;
+}
+
+#toggle-theme:checked ~ body {
+  background-color: #121212;
+  color: white;
+}
+
+/* Esconde o checkbox, só mostra o botão estilizado */
+#toggle-theme {
+  display: none;
+}
+
+.switch {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 5px;
+}
